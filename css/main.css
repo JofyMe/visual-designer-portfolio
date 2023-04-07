@@ -2,11 +2,18 @@
     font-family: 'Epilogue';
     margin: 0;
     padding: 0;
+    color: #2D2D2D;
+    font-weight: 400;
 } 
 
-header {
-    font-weight: 400;
-    color: #000;
+  header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.95;
   }
 
   .header__container {
@@ -18,7 +25,7 @@ header {
     margin: 0 auto;
   }
   
-  .logo {
+  .logo span {
     margin-right: 20px;
     font-weight: 600;
   }
@@ -49,7 +56,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 40px;
+    margin: 40px auto;
   }
 
   .container {
@@ -88,5 +95,39 @@ header {
     width: 80%;
     display: flex;
     margin-left: auto;
+  }
+
+  .brands {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills__card {
+    max-width: 400px;
+    text-align: center;
+    justify-content: center;
+    padding: 60px;
+  }
+
+  .skills__card h3 {
+    font-size: 27px;
+    font-weight: 600;
+    margin: 40px auto;
+    color: #2D2D2D;
+
+  }
+
+  .skills__card p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 40px auto;
+    color: #2D2D2D;
   }
   

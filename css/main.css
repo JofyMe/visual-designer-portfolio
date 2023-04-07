@@ -1,0 +1,92 @@
+* {
+    font-family: 'Epilogue';
+    margin: 0;
+    padding: 0;
+} 
+
+header {
+    font-weight: 400;
+    color: #000;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1280px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    margin-right: 20px;
+    font-weight: 600;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    color: #000;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .container {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  .hero__left {
+    flex-basis: 50%;
+  }
+
+  .hero__left h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 60px;
+
+  }
+
+  .hero__left h1 {
+    font-size: 100px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .hero__left p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hero__right {
+    flex-basis: 50%;
+  }
+
+  .hero__right img {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+  }
+  

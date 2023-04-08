@@ -56,7 +56,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 40px auto;
+    margin: 80px auto;
   }
 
   .container {
@@ -114,6 +114,7 @@
     text-align: center;
     justify-content: center;
     padding: 60px;
+    margin-top: 40px;
   }
 
   .skills__card h3 {
@@ -127,7 +128,111 @@
   .skills__card p {
     font-size: 17px;
     font-weight: 400;
-    margin: 40px auto;
+    margin-top: 40px auto;
     color: #2D2D2D;
   }
+
+  .works__h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 80px;
+  }
+
+  .works__row-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .works__card {
+    text-align: left;
+    margin-right: 45px;
+    width: 100%;
+  }
+
+  .works__card:last-child {
+    margin-right: 0px;
+  }
+
+  .works__card img {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .works__card h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .works__card p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .clients__h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 160px;
+    margin-bottom: 60px;
+  }
+
+  .clients__row-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .client__card {
+    height: 300px;
+    background-color: #F3F3F3;
+    padding: 30px;
+    margin-right: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .client__card:last-child {
+    margin-right: 0px;
+  }
+
+  .client__card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: auto;
+  }
+
+  .client__card-rating {
+    display: flex;
+    justify-content: left;
+  }
+
+  .client__card-rating > img {
+    display: flex;
+    align-items: flex-start;
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+  }
+
+  .client__card-rating-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 17px;
+    font-weight: 400px;
+  }
+
+  .client__card-rating-info img, span {
+    padding: 10px;
+  }
+
+
+
+
   

@@ -15,11 +15,11 @@
       <div class="container">
         <div class="header">
           <h4>LOGO</h4>
-          <nav>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Work</a></li>
-              <li><a href="#">Contact</a></li>
+          <nav class="header__navbar">
+            <ul class="header__menu">
+              <li class="header__item"><a href="#about" class="header__link">About</a></li>
+              <li class="header__item"><a href="#work" class="header__link">Work</a></li>
+              <li class="header__item"><a href="#contact" class="header__link">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -27,14 +27,19 @@
     </header>
     <main>
       <div class="container">
-        <div class="hero">
+        <div class="hero" id="about">
           <div class="hero__left">
-            <h2 class="hero__left-title">Branding | Image making</h2>
-            <h1 class="hero__left-h1">Visual Designer</h1>
-            <p class="hero__left-p">
-              This is a template Figma file, turned into code <br />
-              using Anima. Learn more at AnimaApp.com
-            </p>
+            <div class="hero__left-main">
+              <h2>Branding | Image making</h2>
+              <h1>Visual Designer</h1>
+            </div>
+            <div class="hero__left-text">
+              <p>
+                This is a template Figma file, turned into code <br />
+                using Anima. Learn more at AnimaApp.com
+              </p>
+            </div>
+            
           </div>
           <div class="hero__right">
             <img src="img/hero/girl.svg" alt="" />
@@ -42,114 +47,147 @@
         </div>
 
         <div class="brands">
-          <div class="google">
+          <div class="brand">
             <img src="img/brands/google.svg" alt="" />
           </div>
-          <div class="nike">
+          <div class="brand">
             <img src="img/brands/nike.svg" alt="" />
           </div>
-          <div class="sumsung">
+          <div class="brand">
             <img src="img/brands/sumsung.svg" alt="" />
           </div>
-          <div class="apple">
+          <div class="brand">
             <img src="img/brands/apple.svg" alt="" />
           </div>
-          <div class="intercome">
+          <div class="brand">
             <img src="img/brands/intercome.svg" alt="" />
           </div>
-          <div class="adidas">
+          <div class="brand">
             <img src="img/brands/adidas.svg" alt="" />
           </div>
         </div>
 
         <div class="skills">
           <div class="skills__card">
-            <img src="img/skills/img-left.svg" alt="" />
-            <h3>Product design</h3>
-            <p>
-              This is a template Figma file, turned into code using Anima. Learn
-              more at AnimaApp.com
-            </p>
+            <div class="skills__card-ill">
+              <img src="img/skills/img-left.svg" alt="" />
+            </div>
+            <div class="skills__card-text">
+              <h3>Product design</h3>
+              <p>
+                This is a template Figma file, turned into code using Anima. Learn
+                more at AnimaApp.com
+              </p>
+            </div>
           </div>
           <div class="skills__card">
-            <img src="img/skills/img-center.svg" alt="" />
-            <h3>Art direction</h3>
-            <p>
-              This is a template Figma file, turned into code using Anima. Learn
-              more at AnimaApp.com
-            </p>
+            <div class="skills__card-ill">
+              <img src="img/skills/img-center.svg" alt="" />
+            </div>
+            <div class="skills__card-text">
+              <h3>Product design</h3>
+              <p>
+                This is a template Figma file, turned into code using Anima. Learn
+                more at AnimaApp.com
+              </p>
+            </div>
           </div>
           <div class="skills__card">
-            <img src="img/skills/img-right.svg" alt="" />
-            <h3>Visual design</h3>
-            <p>
-              This is a template Figma file, turned into code using Anima. Learn
-              more at AnimaApp.com
-            </p>
+            <div class="skills__card-ill">
+              <img src="img/skills/img-right.svg" alt="" />
+            </div>
+            <div class="skills__card-text">
+              <h3>Product design</h3>
+              <p>
+                This is a template Figma file, turned into code using Anima. Learn
+                more at AnimaApp.com
+              </p>
+            </div>
           </div>
         </div>
 
-        <div class="works">
+        <div class="works" id="work">
+
           <h2>Latest work</h2>
           <div class="works-cards">
+
             <div class="works__card">
-              <img src="img/works/img-first.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-            <div class="works__card">
-              <img src="img/works/img-second.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-            <div class="works__card">
-              <img src="img/works/img-third.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-            <div class="works__card">
-              <img src="img/works/img-fourth.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-            <div class="works__card">
-              <img src="img/works/img-fifth.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-            <div class="works__card">
-              <img src="img/works/img-sixth.svg" alt="" />
-              <h4>Project title</h4>
-              <p>UI, Art drection</p>
-            </div>
-          </div>
-        </div>
-        <div class="clients">
-          <h2>Clients</h2>
-          <div class="clients-cards">
-            <div class="client__card">
-              <h4>
-                This is a template Figma file, turned into code using Anima.
-                Learn more at AnimaApp.com
-              </h4>
-              <div class="client__card-rating">
-                <img src="img/clients/avatar-first.svg" alt="" />
-                <div class="client__card-rating-info">
-                  <img src="img/clients/stars.svg" alt="" />
-                  <p>
-                    Gemma Nolen, <br />
-                    Google
-                  </p>
-                </div>
+              <div class="works__card-ill">
+                <img src="img/works/img-first.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
               </div>
             </div>
+
+            <div class="works__card">
+              <div class="works__card-ill">
+                <img src="img/works/img-second.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+              </div>
+            </div>
+
+            <div class="works__card">
+              <div class="works__card-ill">
+                <img src="img/works/img-third.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+              </div>
+            </div>
+
+            <div class="works__card">
+              <div class="works__card-ill">
+                <img src="img/works/img-fourth.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+              </div>
+            </div>
+
+            <div class="works__card">
+              <div class="works__card-ill">
+                <img src="img/works/img-fifth.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+              </div>
+            </div>
+
+            <div class="works__card">
+              <div class="works__card-ill">
+                <img src="img/works/img-sixth.svg" alt="" />
+              </div>
+              <div class="works__card-text">
+                <h4>Project title</h4>
+                <p>UI, Art drection</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="clients">
+          <h2>Clients</h2>
+          
+          <div class="clients-cards">
+            
             <div class="client__card">
               <h4>
                 This is a template Figma file, turned into code using Anima.
                 Learn more at AnimaApp.com
               </h4>
               <div class="client__card-rating">
-                <img src="img/clients/avatar-second.svg" alt="" />
+                <div class="client__card-avatar">
+                  <img src="img/clients/avatar-first.svg" alt="" />
+                </div>
                 <div class="client__card-rating-info">
                   <img src="img/clients/stars.svg" alt="" />
                   <p>
@@ -166,7 +204,9 @@
                 Learn more at AnimaApp.com
               </h4>
               <div class="client__card-rating">
-                <img src="img/clients/avatar-third.svg" alt="" />
+                <div class="client__card-avatar">
+                  <img src="img/clients/avatar-first.svg" alt="" />
+                </div>
                 <div class="client__card-rating-info">
                   <img src="img/clients/stars.svg" alt="" />
                   <p>
@@ -176,6 +216,26 @@
                 </div>
               </div>
             </div>
+
+            <div class="client__card">
+              <h4>
+                This is a template Figma file, turned into code using Anima.
+                Learn more at AnimaApp.com
+              </h4>
+              <div class="client__card-rating">
+                <div class="client__card-avatar">
+                  <img src="img/clients/avatar-first.svg" alt="" />
+                </div>
+                <div class="client__card-rating-info">
+                  <img src="img/clients/stars.svg" alt="" />
+                  <p>
+                    Gemma Nolen, <br />
+                    Google
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -183,30 +243,47 @@
 
     <footer id="footer">
       <div class="container">
-        <div class="feedback">
+        <div class="feedback" id="contact">
           <div class="feedback__social">
-            <h2>Lets work together</h2>
-            <p>
-              This is a template Figma file, turned into code using Anima. Learn
-              more at AnimaApp.com This is a template Figma file, turned into
-              code using Anima. Learn more at AnimaApp.com
-            </p>
+            <div class="feedback__social-text">
+              <h2>Lets work together</h2>
+              <p>
+                This is a template Figma file, turned into code using Anima. Learn
+                more at AnimaApp.com This is a template Figma file, turned into
+                code using Anima. Learn more at AnimaApp.com
+              </p>
+            </div>
+           
             <div class="feedback__social-icons">
-              <a href="">
-                <img src="img/feedback/discord.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="img/feedback/facebook.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="img/feedback/dribble.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="img/feedback/instagram.svg" alt="" />
-              </a>
-              <a href="">
-                <img src="img/feedback/behand.svg" alt="" />
-              </a>
+    
+              <ul class="feedback__social-list">
+                <li class="feedback__social-item">
+                  <a href="#" class="feedback__social-link">
+                    <img class="feedback__social-icon" src="img/feedback/discord.svg" alt="" />
+                  </a>
+                </li>
+                <li class="feedback__social-item">
+                  <a href="#" class="feedback__social-link">
+                    <img class="feedback__social-icon" src="img/feedback/facebook.svg" alt="" />
+                  </a>
+                </li>
+                <li class="feedback__social-item">
+                  <a href="#" class="feedback__social-link">
+                    <img class="feedback__social-icon" src="img/feedback/behand.svg" alt="" />
+                  </a>
+                </li>
+                <li class="feedback__social-item">
+                  <a href="#" class="feedback__social-link">
+                    <img class="feedback__social-icon" src="img/feedback/dribble.svg" alt="" />
+                  </a>
+                </li>
+                <li class="feedback__social-item">
+                  <a href="#" class="feedback__social-link">
+                    <img class="feedback__social-icon" src="img/feedback/instagram.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+
             </div>
           </div>
           <div class="feedback__forms">
@@ -230,7 +307,7 @@
               id="text"
               name="text"
             ></textarea>
-            <a href=""> Submit </a>
+            <button>Submit</button>
           </div>
         </div>
       </div>

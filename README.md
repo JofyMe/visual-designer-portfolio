@@ -7,7 +7,7 @@ Student layout of the designer's portfolio site
 * [CSS3](https://en.wikipedia.org/wiki/CSS) - Style sheet language
 * [GIT](https://git-scm.com/) - Version control system
 * [VSC](https://code.visualstudio.com/) - Source code editor 
-* [Figma](https://www.figma.com/) - 
+* [Figma](https://www.figma.com/) - Online service for interface development
 
 ## Authors
 

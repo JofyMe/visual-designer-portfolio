@@ -1,5 +1,3 @@
-# visual-designer-portfolio
-
 # VISUAL DESIGNER PORTFOLIO
 
 Student layout of the designer's portfolio site 

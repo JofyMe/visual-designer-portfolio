@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap');
+
 :root {
   --black: #2d2d2d;
   --white: #fff;
@@ -8,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -28,13 +32,12 @@ input {
   font-family: "Epilogue", sans-serif;
   color: var(--black);
   font-weight: 400;
-  line-height: 27px;
+  text-decoration: none;
 }
 
 h1 {
   font-size: 100px;
   font-weight: 600;
-  line-height: 1;
 }
 
 h2 {
@@ -55,6 +58,10 @@ h4 {
 p {
   font-size: 17px;
   font-weight: 400;
+}
+
+ul, li {
+  list-style-type: none;
 }
 
 header {
@@ -87,26 +94,12 @@ header {
   height: 80px;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.header__menu {
   display: flex;
 }
 
-nav li {
-  margin-right: 20px;
-  color: var(--black);
-}
-
-nav li:last-child {
-  margin-right: 0;
-}
-
-nav a {
-  display: block;
+.header__link {
   padding: 10px;
-  text-decoration: none;
 }
 
 @media only screen and (max-width: 420px) {
@@ -131,11 +124,11 @@ nav a {
   flex-basis: 50%;
 }
 
-.hero__left > h2 {
+.hero__left-main h2 {
   margin-bottom: 60px;
 }
 
-.hero__left > h1 {
+.hero__left-main h1 {
   margin-bottom: 60px;
 }
 
@@ -152,12 +145,12 @@ nav a {
   .hero__left {
     flex-basis: 35%;
   }
-  .hero__left > h2 {
+  .hero__left h2 {
     font-size: 18px;
     margin: 5% auto;
   }
 
-  .hero__left > h1 {
+  .hero__left h1 {
     font-size: 60px;
     margin: 5% auto;
   }
@@ -166,7 +159,7 @@ nav a {
     flex-basis: 50%;
   }
 
-  .hero__right > img {
+  .hero__right img {
     width: 100%;
     margin-left: auto;
   }
@@ -197,8 +190,11 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
-.brands > div {
-  margin: auto auto;
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -206,11 +202,9 @@ nav a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 
-  .brands > div {
+  .brand {
     padding: 20px;
   }
 }
@@ -220,28 +214,26 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 }
 
 .skills {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .skills__card {
   max-width: 400px;
   text-align: center;
   justify-content: center;
-  margin-right: 90px;
 }
 
 .skills__card:last-child {
   margin-right: 0px;
 }
 
-.skills__card > h3 {
+.skills__card-text h3 {
   margin: 30px auto;
 }
 
@@ -263,58 +255,42 @@ nav a {
 }
 
 .works h2 {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .works-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
-.works__card {
-  padding: 22.5px;
-}
-
-.works__card > img {
-  margin-top: 60px;
+.works__card-ill img {
   width: 100%;
 }
 
-.works__card > h4 {
-  margin-top: 15px;
-}
-
-.works__card > p {
-  margin-top: 10px;
+.works__card-text h4 {
+  margin: 15px 0 10px 0;
 }
 
 @media only screen and (max-width: 1110px) {
   .works-cards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 }
 
 @media only screen and (max-width: 620px) {
   .works-cards {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
   }
 }
 
-.clients > h2 {
-  display: flex;
-  justify-content: center;
+.clients h2 {
+  text-align: center;
   margin-bottom: 60px;
 }
 
@@ -322,48 +298,30 @@ nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
 .client__card {
   height: 300px;
   background-color: var(--grey);
-  padding: 30px;
-  margin-right: 45px;
   display: flex;
+  padding: 30px;
   flex-direction: column;
-  justify-content: center;
-}
-
-.client__card:last-child {
-  margin-right: 0px;
-}
-
-.client__card > h4 {
-  margin-bottom: auto;
+  justify-content: space-between;
 }
 
 .client__card-rating {
   display: flex;
 }
 
-.client__card-rating > img {
-  display: flex;
-  align-items: flex-start;
+.client__card-avatar img {
   width: 60px;
   height: 60px;
   padding-right: 10px;
 }
 
-.client__card-rating-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-}
-
-.client__card-rating-info > img,
-p {
+.client__card-rating-info img, p {
   padding: 5px;
 }
 
@@ -374,7 +332,6 @@ p {
     margin: 0 auto;
   }
   .clients-cards {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 5%;
@@ -384,70 +341,69 @@ p {
 
 .feedback {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.feedback__social > p {
-  max-width: 400px;
-  margin: 40px auto;
+.feedback__social {
+  width: 400px;
+  max-width: 100%;
 }
 
-.feedback__social-icons > img,
-a {
+.feedback__social-text p {
+  margin: 40px 0;
+}
+
+.feedback__social-list {
+  display: flex;
+}
+
+.feedback__social-icon {
   padding: 10px;
 }
 
 .feedback__forms {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
   width: 50%;
 }
 
 .feedback__input {
   width: 100%;
   height: 70px;
-  border: 0px;
+  border: 0;
   font-size: 17px;
   font-weight: 400;
-  padding: 0 30px 0 30px;
+  padding: 0 30px;
   margin-bottom: 18px;
   background-color: var(--grey);
 }
 
-.feedback__forms > textarea {
+.feedback__forms textarea {
   height: 215px;
   margin-bottom: 36px;
   padding: 30px 30px 0 30px;
   resize: none;
 }
 
-.feedback__forms > a {
+.feedback__forms button {
   width: 35%;
   line-height: 80px;
   font-size: 20px;
   font-weight: 600;
   color: var(--white);
   background-color: var(--black);
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 @media only screen and (max-width: 1110px) {
   .feedback {
     display: flex;
-    flex-wrap: wrap;
-  }
-  .feedback__social {
-    margin: 10% auto;
+    justify-content: center;
   }
 
-  .feedback__social > p {
-    max-width: 100%;
-  }
-
-  .feedback__forms {
+  .feedback__forms, .feedback__social {
     width: 100%;
+  }
+  
+  .feedback__social {
+    margin: 10% 0;
   }
 }
 @media only screen and (max-width: 620px) {

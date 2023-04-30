@@ -1,6 +1,6 @@
 # VISUAL DESIGNER PORTFOLIO
 
-Student layout of the designer's portfolio site 
+My first student layout of the designer's portfolio site 
 
 [LIVE DEMO](https://jofyme.github.io/visual-designer-portfolio/)
 
